@@ -3,6 +3,7 @@ let restaurants,
   cuisines
 var newMap
 var markers = []
+var dbPromise
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -12,6 +13,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   fetchNeighborhoods();
   fetchCuisines();
 });
+
+
 
 /**
  * Fetch all neighborhoods and set their HTML.
